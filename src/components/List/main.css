@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+  }  
+.wrapper {
+    height: 100dvh;;
+    background-color: #5e010154;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.container{
+    width: 100vmin;
+    margin: auto;
+    background-color: #ffffff;
+}
+.todo-input{
+    width: 90vmin;
+    margin: 0 auto;
+}
+.todo-input h1{
+    margin: 15px 0;
+    text-align: center;
+    color: #720000a4;
+    font-size: 3.5em;
+    font-weight: 900;
+}
+.todo-input input{
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    background-color: #e6e6e6;
+    padding: 15px;
+    font-style: italic;
+    font-size: 1.2em;
+    /* opacity: 0.5; placeholder. */
+}
+.list-container {
+    width: 90vmin;
+    margin: 15px auto;
+    height: 305px;
+    overflow-y: scroll;
+}
+.list-container input{
+    margin: 0 12px;
+}
+.list-container ul li{
+    background-color: #e6e6e6;
+    border-radius: .5em;
+    min-height: 1.5em;
+    list-style-type: none;
+    position: relative;
+    font-size: 1.2em;
+    margin: 5px 0;
+    padding: 10px 15px;
+}
+.list-container ul span{
+    margin: auto;
+    font-weight: 700;
+    color: #000000b0;
+}
+.list-container .delete-btn{
+    position: absolute;
+    top: 0;
+    right: 2%;
+    border: none;
+    font-size: 1.2em;
+    background-color: transparent;
+    color: #5e0101fb;
+    cursor: pointer;
+}
+.footer-container {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    position: relative;
+    font-size: 1.2em;
+}
+.footer-container span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    /* transform: translateX(-50%); */
+}
+.filter-buttons{
+    position: absolute;
+    left: 30px;
+}
+.filter-buttons .filtered-btn{
+    border: 1px solid #00000027;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 0 10px;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 1em;
+}
+.footer-container .completed-all{
+    margin-left: auto;
+    padding: 0 15px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.footer-container .completed-all:hover{
+    text-decoration: underline;
+    transition: all 500ms 100ms ease-in;
+}
