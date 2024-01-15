@@ -90,8 +90,9 @@ function ToDoList() {
         <div className='list-container'>
           <ul className='list-items'>
             {filterTodos().map((todo, i) => (
-              <li className='list-item' key={i}>
+              <li className={`list-item`} key={i}>
                 <input
+                  className='checkbox'
                   type="checkbox"
                   checked={todo.completed}
                   onChange={() => toggle_complete(i)}

@@ -110,3 +110,40 @@
     text-decoration: underline;
     transition: all 500ms 100ms ease-in;
 }
+.checkbox:checked + span{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.checkbox[type="checkbox"]::before{
+    position: relative;
+    display: block;
+    left: -2px;
+    top: -2px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    content: '';
+    background: #fff;
+}
+/* ,
+.checkbox[type="checkbox"]::-moz-before */
+
+/* its still not working with moz firefox.
+            Fix it later!! */
+.checkbox[type="checkbox"]:checked::after{
+    position: relative;
+    display: block;
+    left: -2px;
+    top: -19px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #5e0101fb;
+    border-radius: 50%;
+    content: '✘';
+    text-align: center;
+    font-size: 0.85em;
+    font-weight: 900;
+    background-color: #fff; 
+    color: #5e0101b5;
+}
